@@ -1,0 +1,24 @@
+.container{
+  margin: 0 auto; 
+  width: 1024px; 
+}
+.top{
+  height:256px;
+  background-color:#e53935;
+}
+.middle{
+  display: flex;
+  height:1024px;
+}
+.middle-left{
+  width:340px;
+  background-color:#fbc02d;
+}
+.middle-right{
+  width:684px;
+  background-color:#8bc34a;
+}
+.bottom{
+  height:256px;
+  background-color:#1976d2;
+}

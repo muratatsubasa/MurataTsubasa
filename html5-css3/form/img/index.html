@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Web開発 - 入力フォーム</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <img src="img/logo.png" alt="ERAS inc.">
+      </h1>
+      <img src="img/icon_home.png" alt="home_button">
+    </header>
+    <main>
+      <div class="information">
+        <hr class="main">
+        <p class="left_side">お問い合わせはこちらまで</p>
+        <p class="right_side">受付 10:00~19:00 (平日)
+          <a href="tel:0364355678">Tel:03-6435-5678</a>
+        <hr class="main">
+        </div>
+      <div class="question">
+        <ul>
+            <h2>申込フォーム</h2>
+            <hr class="sub">
+          <li>
+            <label class="business">
+              <span>興味のある事業内容
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="checkbox" required> ウェブサイトの開発
+                <br>
+                <input type="checkbox" required> アプリケーションの開発
+                <br>
+                <input type="checkbox" required> AIの開発
+                <br>
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="process">
+            <label>
+              <span>興味がある開発工程
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="checkbox" required> フロントエンド
+                <br>
+                <input type="checkbox" required> バックエンド
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="name">
+            <label>
+              <span>氏名（漢字）
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="text" required>
+                <br>&nbsp;例）山田 太郎（姓と名の間にスペースを入れて下さい）
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="phonetic">
+            <label>
+              <span>氏名（フリガナ）
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="text" required>
+                <br>&nbsp;例）ヤマダ タロウ（姓と名の間にスペースを入れて下さい）</form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="birthday">
+            <label>
+              <span>生年月日
+                <p class="optional">任意</p>
+              </span>
+              <form>
+                <input type="date">
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="age">
+            <label>
+              <span>年齢
+                <p class="optional">任意</p>
+              </span>
+              <form>
+                <input type="text">
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="gender">
+            <label>
+              <span>性別
+                <p class="optional">任意</p>
+              </span>
+              <form>
+                <input type="radio" name="gender" required>男性
+                <input type="radio" name="gender">女性</label>
+            </form>
+          </li>
+          <hr class="sub">
+          <li class="address">
+            <label>
+              <span>現住所
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="text" class="postal_code" required>
+                <br>&nbsp;例）1060044（ハイフン不要）
+                <br>
+                <input type="text" placeholder="都道府県" required>
+                <br>&nbsp;例）東京都
+                <br>
+                <input type="text" placeholder="市区町村丁目番地" required>
+                <br>&nbsp;例）港区東麻布2-3-5
+                <br>
+                <input type="text" placeholder="建物名・部屋番号">
+                <br>&nbsp;例）第一ビル 4F
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="mail_address">
+            <label>
+              <span>メールアドレス
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="text" required>
+                <br>&nbsp;確認の為、コピーせずに再度入力してください
+                <br>
+                <input type="text" required>
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="phone_number">
+            <label>
+              <span>連絡先
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="text" required>
+                <br>&nbsp;例）03-6435-5678（ご連絡がつきやすい電話番号）</form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="profession">
+            <label>
+              <span>現在の職業
+                <p class="essential">必須</p>
+              </span>
+              <div>
+              <form>
+                <input type="radio" name="profession" required>高校生
+                <input type="radio" name="profession">短大生
+                <input type="radio" name="profession">大学生
+                <input type="radio" name="profession">専門学校生
+                <input type="radio" name="profession">留学生
+                <input type="radio" name="profession">会社員
+                <br>
+                <input type="radio" name="profession">アルバイト
+                <input type="radio" name="profession">その他
+              </form>
+              <form class="school_name">
+                <br>&nbsp;学校名
+                <br>
+                <input type="text">
+              </form>
+              <form>
+                <br>&nbsp;現学年
+                <br>
+                <input type="radio" name="grade">1年
+                <input type="radio" name="grade">2年
+                <input type="radio" name="grade">3年
+                <input type="radio" name="grade">4年
+                <input type="radio" name="grade">その他
+              </form>
+              </div>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="briefing">
+            <label>
+              <span>企業説明会
+                <p class="essential">必須</p>
+              </span>
+              <form>
+                <input type="radio" name="briefing">参加希望
+                <input type="radio" name="briefing">不参加
+                <input type="radio" name="briefing">まだわからない
+                <br>
+                <p>参加希望にチェックされた場合、参加希望の時期を選択して下さい</p>
+                <select>
+                  <option>まだ決めていない</option>
+                  <option>4月〜6月頃</option>
+                  <option>7月〜9月頃</option>
+                  <option>10月〜12月頃</option>
+                  <option>1月〜3月頃</option>
+                </select>
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <li class="otherwise">
+            <label>
+              <span>質問事項
+                <p class="optional">任意</p>
+              </span>
+              <form>
+                <textarea rows="5"></textarea>
+              </form>
+            </label>
+          </li>
+          <hr class="sub">
+          <div class="button">
+            <button>確認画面へ</button>
+          </div>
+        </ul>
+
+
+
+      </div>
+  </div>
+  </main>
+</body>
+
+</html>

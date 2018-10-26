@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Web開発 - 入力フォーム</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div>
+        <h1>
+          <img src="img/logo.png" alt="ERAS inc.">
+        </h1>
+        <div class="home_button"></div>
+      </div>
+    </header>
+
+    <main>
+      <hr class="main">
+      <div class="information">
+        <p class="left_side">お問い合わせはこちらまで</p>
+        <p class="right_side">受付 10:00~19:00 (平日)
+          <a href="tel:0364355678">Tel:03-6435-5678</a>
+        </p>
+      </div>
+      <hr class="main">
+      <div class="question">
+        <ul>
+          <h2>申込フォーム</h2>
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">興味のある事業内容
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <label><input type="checkbox" name="development">ウェブサイトの開発</label>
+                <br>
+                <label><input type="checkbox" name="development"> アプリケーションの開発</label>
+                <br>
+                <label><input type="checkbox" name="development"> AIの開発</label>
+                <br>
+              </form>
+            </div>
+
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">興味がある開発工程
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <label><input type="checkbox" name="process"> フロントエンド</label>
+                <br>
+                <label><input type="checkbox" name="process"> バックエンド</label>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">氏名(漢字)
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <input type="text" name="name" class="inputForm name">
+                <p class="font_gray">例）山田 太郎（姓と名の間にスペースを入れて下さい)</p>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">氏名(フリガナ)
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <input type="text" name="katakane_name" class="inputForm">
+                <p class="font_gray">例）ヤマダ タロウ（姓と名の間にスペースを入れて下さい）</p>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">生年月日
+                <p class="optional">任意</p>
+              </div>
+              <form>
+                <input type="date" name="birthday" class="inputForm" placeholder="　年　/月/日">
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">年齢
+                <p class="optional">任意</p>
+              </div>
+              <div class="divForm">
+                <div class="form">
+                  <input type="text" name="age" class="inputForm">
+                  <p class='age'>歳</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li class="gender">
+            <div class="form_menu">
+              <div class="form_set">性別
+                <p class="optional">任意</p>
+              </div>
+              <form class="flex">
+                <p class="space">
+                  <label><input type="radio" name="gender">男性</label>
+                </p>
+                <p>
+                  <label><input type="radio" name="gender">女性</label>
+                </p>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">現住所
+                <p class="essential">必須</p>
+              </div>
+              <div class="divForm">
+                <div class="form">
+                  <p class="postal_code">〒</p>
+                  <input type="text" name="postal_code" class="inputForm">
+                </div>
+                <p class="font_gray">例）1060044（ハイフン不要）</p>
+                <input type="text" placeholder="都道府県" class="inputForm" name="address_prefectures">
+                <p class="font_gray">例）東京都</p>
+                <input type="text" placeholder="市区町村丁目番地" class="inputForm" name="address_cities">
+                <p class="font_gray">例）港区東麻布2-3-5</p>
+                <input type="text" placeholder="建物名・部屋番号" class="inputForm" name="adress_building">
+                <p class="font_gray">例）第一ビル 4F</p>
+              </div>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">メールアドレス
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <input type="email" class="inputForm" name="email">
+                <p class="font_gray">確認の為、コピーせずに再度入力してください</p>
+                <input type="email" class="inputForm" name="email_check">
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">連絡先
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <input type="tel" class="inputForm" name="phone_number">
+                <p class="font_gray">例）03-6435-5678（ご連絡がつきやすい電話番号）</p>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">現在の職業
+                <p class="essential">必須</p>
+              </div>
+              <div class="divForm">
+                <div class="radio_wrap">
+                  <label>
+                    <input type="radio" name="profession" name="profession">高校生</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">短大生</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">大学生</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">専門学校生</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">留学生</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">会社員</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">アルバイト</label>
+                  <label>
+                    <input type="radio" name="profession" name="profession">その他</label>
+                </div>
+
+                <div>
+                  <p>学校名</p>
+                  <input type="text" class="inputForm" name="school_name">
+                </div>
+                <p class="grade">現学年</p>
+
+                <div class="radio_wrap">
+                  <label>
+                    <input type="radio" name="grade">1年</label>
+                  <label>
+                    <input type="radio" name="grade">2年</label>
+                  <label>
+                    <input type="radio" name="grade">3年</label>
+                  <label>
+                    <input type="radio" name="grade">4年</label>
+                  <label>
+                    <input type="radio" name="grade">その他</label>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li class="briefing">
+            <div class="form_menu">
+              <div class="form_set">企業説明会
+                <p class="essential">必須</p>
+              </div>
+              <form>
+                <div class="flex">
+                  <label class="space">
+                    <input type="radio" name="briefing">参加希望
+                  </label>
+                  <label class="space">
+                    <input type="radio" name="briefing">不参加
+                  </label>
+                  <label>
+                    <input type="radio" name="briefing">まだわからない
+                  </label>
+                </div>
+                <p class="font_gray">参加希望にチェックされた場合、参加希望の時期を選択して下さい</p>
+                <select class="inputForm">
+                  <option name="season">まだ決めていない</option>
+                  <option name="season">4月〜6月頃</option>
+                  <option name="season">7月〜9月頃</option>
+                  <option name="season">10月〜12月頃</option>
+                  <option name="season">1月〜3月頃</option>
+                </select>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+          <li>
+            <div class="form_menu">
+              <div class="form_set">質問事項
+                <p class="optional">任意</p>
+              </div>
+              <form>
+                <textarea type="text" rows="5"></textarea>
+              </form>
+            </div>
+          </li>
+
+          <hr class="sub">
+
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <input type="button" class="button" value="確認画面へ">
+    </footer>
+
+  </div>
+</body>
+
+</html>

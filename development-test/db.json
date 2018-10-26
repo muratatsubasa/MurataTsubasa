@@ -1,0 +1,78 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "price": 69800,
+      "scene": "business"
+    },
+    {
+      "id": 2,
+      "price": 128000,
+      "scene": "business"
+    },
+    {
+      "id": 3,
+      "price": 248000,
+      "scene": "business"
+    },
+    {
+      "id": 4,
+      "price": 18000,
+      "scene": "casual"
+    },
+    {
+      "id": 5,
+      "price": 9000,
+      "scene": "casual"
+    },
+    {
+      "id": 6,
+      "price": 245000,
+      "scene": "casual"
+    },
+    {
+      "id": 7,
+      "price": 89000,
+      "scene": "casual"
+    },
+    {
+      "id": 8,
+      "price": 45000,
+      "scene": "business"
+    },
+    {
+      "id": 9,
+      "price": 22600,
+      "scene": "business"
+    },
+    {
+      "id": 10,
+      "price": 16400,
+      "scene": "business"
+    },
+    {
+      "id": 11,
+      "price": 9800,
+      "scene": "casual"
+    }
+  ],
+  "cart": [
+    {
+      "itemId": 6,
+      "price": 245000,
+      "id": 1
+    }
+  ],
+  "buy": [
+    {
+      "date": "2018-10-25T03:58:28.514Z",
+      "items": [
+        {
+          "itemId": 1,
+          "price": 69800
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
